@@ -27,8 +27,10 @@ function[h]=letterlabels(arg1,arg2,arg3)
 %   (C) 2000--2016 J.M. Lilly --- type 'help jlab_license' for details
 
 
-if strcmpi(arg1,'--t')
-    return
+if nargin>0
+    if strcmpi(arg1,'--t')
+        return
+    end
 end
 
 py=0.08;
